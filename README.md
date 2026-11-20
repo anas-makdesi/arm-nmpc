@@ -10,6 +10,10 @@ standard tools for torque-controlled arms. It also uses a joint-friction model l
 from a 6 s calibration motion, whose error is **certified** by
 [ddma](https://github.com/anas-makdesi/ddma).
 
+![Panda on a 1.35 m/s circle: NMPC keeps every joint at or below its velocity limit, operational-space control reaches 135 %](docs/figures/demo.gif)
+
+*15 cm circle at 1.35 m/s, shown at quarter speed: the NMPC keeps every joint within its velocity limit; operational-space control drives a joint to 135 % of its limit, where a real Panda stops ([script](examples/demo_gif.py)).*
+
 | | |
 |---|---|
 | **0.04 mm** | RMS TCP error at 1.35 m/s, with every joint within 0.1 % of its velocity limit. The QP baseline gets 0.86 mm; operational-space control gets 0.99 mm but exceeds a velocity limit by 35 %, which stops a real Panda |
