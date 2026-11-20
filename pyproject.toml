@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anmpc"
+version = "0.1.0"
+description = "Real-time joint-torque NMPC for a 7-joint arm (Franka Panda, acados), with operational-space and task-space-QP baselines, a friction model with a certified error bound (ddma) and ROS 2 C++ nodes."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Anas Makdesi" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "casadi>=3.6", "osqp>=1.0", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+friction = ["ddma @ git+https://github.com/anas-makdesi/ddma@v0.12.0"]
+dev = ["pytest>=7", "ruff>=0.4", "pin>=3", "example-robot-data"]  # Pinocchio: reference in tests
+# acados_template is installed from the acados source tree (see README)
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = ["ignore::UserWarning", "ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E702", "E731"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/anmpc/panda_data.py" = ["E501"]  # generated numbers

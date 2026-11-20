@@ -1,0 +1,526 @@
+{
+  "sweep": {
+    "2.0": {
+      "nmpc": {
+        "name": "NMPC (acados)",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 0.02,
+        "max_error_mm": 0.04,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.465,
+        "max_tau_ratio": 0.302,
+        "solve_ms_median": 3.215,
+        "solve_ms_p99": 5.53,
+        "solve_ms_max": 12.152
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 0.08,
+        "max_error_mm": 0.11,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.464,
+        "max_tau_ratio": 0.3,
+        "solve_ms_median": 0.355,
+        "solve_ms_p99": 0.952,
+        "solve_ms_max": 2.179
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 0.08,
+        "max_error_mm": 0.12,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.463,
+        "max_tau_ratio": 0.3,
+        "solve_ms_median": 0.786,
+        "solve_ms_p99": 1.724,
+        "solve_ms_max": 8.385
+      },
+      "peak_speed_m_s": 0.47
+    },
+    "1.0": {
+      "nmpc": {
+        "name": "NMPC (acados)",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 0.04,
+        "max_error_mm": 0.07,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.0,
+        "max_tau_ratio": 0.447,
+        "solve_ms_median": 3.463,
+        "solve_ms_p99": 4.835,
+        "solve_ms_max": 6.068
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 0.38,
+        "max_error_mm": 0.42,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.934,
+        "max_tau_ratio": 0.495,
+        "solve_ms_median": 0.364,
+        "solve_ms_p99": 0.924,
+        "solve_ms_max": 1.965
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 0.29,
+        "max_error_mm": 0.35,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.934,
+        "max_tau_ratio": 0.494,
+        "solve_ms_median": 0.75,
+        "solve_ms_p99": 1.357,
+        "solve_ms_max": 3.118
+      },
+      "peak_speed_m_s": 0.94
+    },
+    "0.8": {
+      "nmpc": {
+        "name": "NMPC (acados)",
+        "failed": false,
+        "duration": 2.59,
+        "rms_error_mm": 0.05,
+        "max_error_mm": 0.06,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.0,
+        "max_tau_ratio": 0.654,
+        "solve_ms_median": 3.205,
+        "solve_ms_p99": 5.18,
+        "solve_ms_max": 8.43
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 2.59,
+        "rms_error_mm": 0.69,
+        "max_error_mm": 0.79,
+        "velocity_limit_violation_pct": 20.77,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.177,
+        "max_tau_ratio": 0.634,
+        "solve_ms_median": 0.402,
+        "solve_ms_p99": 0.876,
+        "solve_ms_max": 0.975
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 2.59,
+        "rms_error_mm": 0.58,
+        "max_error_mm": 0.69,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.002,
+        "max_tau_ratio": 0.62,
+        "solve_ms_median": 0.807,
+        "solve_ms_p99": 1.395,
+        "solve_ms_max": 1.777
+      },
+      "peak_speed_m_s": 1.18
+    },
+    "0.7": {
+      "nmpc": {
+        "name": "NMPC (acados)",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 0.04,
+        "max_error_mm": 0.09,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 2.5,
+        "max_dq_ratio": 1.001,
+        "max_tau_ratio": 1.0,
+        "solve_ms_median": 3.5,
+        "solve_ms_p99": 5.854,
+        "solve_ms_max": 7.395
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 0.99,
+        "max_error_mm": 1.15,
+        "velocity_limit_violation_pct": 30.42,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.351,
+        "max_tau_ratio": 0.757,
+        "solve_ms_median": 0.366,
+        "solve_ms_p99": 0.963,
+        "solve_ms_max": 1.773
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 0.86,
+        "max_error_mm": 1.07,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.002,
+        "max_tau_ratio": 0.728,
+        "solve_ms_median": 0.758,
+        "solve_ms_p99": 0.91,
+        "solve_ms_max": 0.961
+      },
+      "peak_speed_m_s": 1.35
+    },
+    "0.6": {
+      "nmpc": {
+        "name": "NMPC (acados)",
+        "failed": false,
+        "duration": 2.19,
+        "rms_error_mm": 0.64,
+        "max_error_mm": 1.77,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 5.45,
+        "max_dq_ratio": 1.004,
+        "max_tau_ratio": 1.0,
+        "solve_ms_median": 3.375,
+        "solve_ms_p99": 3.662,
+        "solve_ms_max": 3.717
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 2.19,
+        "rms_error_mm": 1.48,
+        "max_error_mm": 1.77,
+        "velocity_limit_violation_pct": 46.36,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.597,
+        "max_tau_ratio": 0.948,
+        "solve_ms_median": 0.365,
+        "solve_ms_p99": 0.688,
+        "solve_ms_max": 2.324
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 2.19,
+        "rms_error_mm": 2.18,
+        "max_error_mm": 4.87,
+        "velocity_limit_violation_pct": 5.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.024,
+        "max_tau_ratio": 0.889,
+        "solve_ms_median": 0.746,
+        "solve_ms_p99": 1.02,
+        "solve_ms_max": 1.161
+      },
+      "peak_speed_m_s": 1.57
+    }
+  },
+  "friction": {
+    "2.0": {
+      "none": {
+        "name": "NMPC, no friction model",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 0.27,
+        "max_error_mm": 0.31,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.467,
+        "max_tau_ratio": 0.317,
+        "solve_ms_median": 3.195,
+        "solve_ms_p99": 6.029,
+        "solve_ms_max": 14.803
+      },
+      "certified": {
+        "name": "NMPC, ddma friction model",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 0.06,
+        "max_error_mm": 0.1,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.471,
+        "max_tau_ratio": 0.322,
+        "solve_ms_median": 3.364,
+        "solve_ms_p99": 10.911,
+        "solve_ms_max": 30.002
+      },
+      "oracle": {
+        "name": "NMPC, true friction parameters",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 0.07,
+        "max_error_mm": 0.11,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.479,
+        "max_tau_ratio": 0.317,
+        "solve_ms_median": 3.41,
+        "solve_ms_p99": 10.478,
+        "solve_ms_max": 12.654
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 4.12,
+        "max_error_mm": 6.04,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.626,
+        "max_tau_ratio": 0.39,
+        "solve_ms_median": 0.376,
+        "solve_ms_p99": 0.768,
+        "solve_ms_max": 1.952
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 4.99,
+        "rms_error_mm": 4.23,
+        "max_error_mm": 6.23,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.626,
+        "max_tau_ratio": 0.39,
+        "solve_ms_median": 0.774,
+        "solve_ms_p99": 1.265,
+        "solve_ms_max": 1.797
+      }
+    },
+    "1.0": {
+      "none": {
+        "name": "NMPC, no friction model",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 0.32,
+        "max_error_mm": 0.37,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.995,
+        "max_tau_ratio": 0.465,
+        "solve_ms_median": 3.633,
+        "solve_ms_p99": 8.223,
+        "solve_ms_max": 11.04
+      },
+      "certified": {
+        "name": "NMPC, ddma friction model",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 0.05,
+        "max_error_mm": 0.13,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 0.997,
+        "max_tau_ratio": 0.483,
+        "solve_ms_median": 3.793,
+        "solve_ms_p99": 8.055,
+        "solve_ms_max": 10.752
+      },
+      "oracle": {
+        "name": "NMPC, true friction parameters",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 0.05,
+        "max_error_mm": 0.13,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.001,
+        "max_tau_ratio": 0.481,
+        "solve_ms_median": 3.423,
+        "solve_ms_p99": 5.601,
+        "solve_ms_max": 10.915
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 5.65,
+        "max_error_mm": 7.24,
+        "velocity_limit_violation_pct": 25.67,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.229,
+        "max_tau_ratio": 0.624,
+        "solve_ms_median": 0.418,
+        "solve_ms_p99": 0.878,
+        "solve_ms_max": 1.582
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 2.99,
+        "rms_error_mm": 6.69,
+        "max_error_mm": 8.65,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.0,
+        "max_tau_ratio": 0.624,
+        "solve_ms_median": 0.825,
+        "solve_ms_p99": 1.469,
+        "solve_ms_max": 1.567
+      }
+    },
+    "0.7": {
+      "none": {
+        "name": "NMPC, no friction model",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 0.46,
+        "max_error_mm": 0.75,
+        "velocity_limit_violation_pct": 0.0,
+        "torque_saturated_pct": 2.08,
+        "max_dq_ratio": 1.006,
+        "max_tau_ratio": 1.0,
+        "solve_ms_median": 3.647,
+        "solve_ms_p99": 7.316,
+        "solve_ms_max": 10.269
+      },
+      "certified": {
+        "name": "NMPC, ddma friction model",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 0.05,
+        "max_error_mm": 0.19,
+        "velocity_limit_violation_pct": 2.08,
+        "torque_saturated_pct": 1.25,
+        "max_dq_ratio": 1.363,
+        "max_tau_ratio": 1.0,
+        "solve_ms_median": 3.686,
+        "solve_ms_p99": 10.328,
+        "solve_ms_max": 11.233
+      },
+      "oracle": {
+        "name": "NMPC, true friction parameters",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 0.05,
+        "max_error_mm": 0.18,
+        "velocity_limit_violation_pct": 2.5,
+        "torque_saturated_pct": 2.5,
+        "max_dq_ratio": 1.115,
+        "max_tau_ratio": 1.0,
+        "solve_ms_median": 3.542,
+        "solve_ms_p99": 5.263,
+        "solve_ms_max": 6.687
+      },
+      "osc": {
+        "name": "Operational-space control",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 6.5,
+        "max_error_mm": 8.28,
+        "velocity_limit_violation_pct": 47.92,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.66,
+        "max_tau_ratio": 0.912,
+        "solve_ms_median": 0.405,
+        "solve_ms_p99": 0.756,
+        "solve_ms_max": 0.827
+      },
+      "qp": {
+        "name": "Task-space QP",
+        "failed": false,
+        "duration": 2.39,
+        "rms_error_mm": 9.01,
+        "max_error_mm": 12.4,
+        "velocity_limit_violation_pct": 5.0,
+        "torque_saturated_pct": 0.0,
+        "max_dq_ratio": 1.019,
+        "max_tau_ratio": 0.871,
+        "solve_ms_median": 0.787,
+        "solve_ms_p99": 1.241,
+        "solve_ms_max": 1.395
+      }
+    }
+  },
+  "friction_model": {
+    "fv": [
+      0.424,
+      0.163,
+      0.41,
+      0.149,
+      0.208,
+      0.21,
+      0.17
+    ],
+    "fc": [
+      1.035,
+      1.207,
+      0.848,
+      1.034,
+      0.481,
+      0.476,
+      0.35
+    ],
+    "certified_error_Nm": [
+      0.679,
+      0.629,
+      0.573,
+      0.566,
+      0.345,
+      0.383,
+      0.302
+    ],
+    "covered_velocity_rad_s": [
+      [
+        -1.75,
+        1.83
+      ],
+      [
+        -1.15,
+        1.16
+      ],
+      [
+        -2.05,
+        2.18
+      ],
+      [
+        -1.21,
+        1.28
+      ],
+      [
+        -4.04,
+        4.34
+      ],
+      [
+        -3.2,
+        3.03
+      ],
+      [
+        -3.86,
+        3.97
+      ]
+    ],
+    "true_fv": [
+      0.6,
+      0.6,
+      0.5,
+      0.5,
+      0.25,
+      0.25,
+      0.2
+    ],
+    "true_fc": [
+      0.8,
+      0.8,
+      0.7,
+      0.7,
+      0.4,
+      0.4,
+      0.3
+    ],
+    "calibration_samples": 600,
+    "noise_Nm": 0.15
+  }
+}

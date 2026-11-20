@@ -1,0 +1,40 @@
+{
+  "nmpc_N15": {
+    "steps": 240,
+    "median_ms": 3.524,
+    "p99_ms": 7.668,
+    "max_ms": 14.138,
+    "over_10ms_pct": 0.42,
+    "rms_error_mm": 0.04,
+    "max_dq_ratio": 1.001,
+    "python_step_median_ms": 4.355
+  },
+  "nmpc_N10_deploy": {
+    "steps": 240,
+    "median_ms": 2.631,
+    "p99_ms": 5.371,
+    "max_ms": 12.249,
+    "over_10ms_pct": 0.42,
+    "rms_error_mm": 0.11,
+    "max_dq_ratio": 1.0,
+    "python_step_median_ms": 3.363
+  },
+  "osc": {
+    "steps": 240,
+    "median_ms": 0.555,
+    "p99_ms": 0.854,
+    "max_ms": 1.79,
+    "over_10ms_pct": 0.0,
+    "rms_error_mm": 0.99,
+    "max_dq_ratio": 1.351
+  },
+  "task_qp": {
+    "steps": 240,
+    "median_ms": 1.139,
+    "p99_ms": 1.655,
+    "max_ms": 1.849,
+    "over_10ms_pct": 0.0,
+    "rms_error_mm": 0.86,
+    "max_dq_ratio": 1.002
+  }
+}

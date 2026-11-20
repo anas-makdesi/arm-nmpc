@@ -1,0 +1,10 @@
+# Example parameters (ros2 run ... --ros-args --params-file params.yaml)
+arm_sim:
+  ros__parameters:
+    state_rate_hz: 100.0
+    friction: true
+nmpc:
+  ros__parameters:
+    period: 1.0
+    friction_fv: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    friction_fc: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]

@@ -1,0 +1,14 @@
+{
+  "seconds": 5.0,
+  "steps": 974,
+  "failed_solves": 0,
+  "rms_error_mm": 0.429,
+  "max_error_mm": 0.489,
+  "max_velocity_ratio": 0.9584,
+  "solve_ms_median": 3.063,
+  "solve_ms_p99": 8.182,
+  "step_ms_median": 3.16,
+  "latency_ms_median": 3.16,
+  "latency_ms_p99": 8.346,
+  "latency_ms_max": 9.837
+}

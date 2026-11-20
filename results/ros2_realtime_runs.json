@@ -1,0 +1,363 @@
+{
+  "description": "ROS 2 closed loop, circle period 1 s, joint friction in the simulator, 6 s per run, errors after the 1 s ramp, velocity as a fraction of the joint limit (worst joint, worst step). Wall-clock runs on a 2-core virtual machine whose host sometimes takes the CPU away for ~150 ms (steps then take 11.5 ms instead of ~3 ms); steps_over_10ms counts them where recorded. friction_model: the model the NMPC compensates (ddma = fitted inside the ddma band, none = no model).",
+  "groups": [
+    {
+      "design": "plan + NMPC gain (current)",
+      "mode": "realtime",
+      "inner_loop": "riccati",
+      "friction_model": "ddma",
+      "runs": [
+        {
+          "steps": 588,
+          "rms_error_mm": 0.5,
+          "max_error_mm": 3.8,
+          "max_velocity_ratio": 0.979,
+          "latency_ms_median": 3.01,
+          "latency_ms_p99": 17.0,
+          "steps_over_10ms": 25
+        },
+        {
+          "steps": 590,
+          "rms_error_mm": 0.3,
+          "max_error_mm": 2.99,
+          "max_velocity_ratio": 0.99,
+          "latency_ms_median": 2.83,
+          "latency_ms_p99": 12.6,
+          "steps_over_10ms": 11
+        },
+        {
+          "steps": 597,
+          "rms_error_mm": 0.28,
+          "max_error_mm": 2.58,
+          "max_velocity_ratio": 0.984,
+          "latency_ms_median": 2.74,
+          "latency_ms_p99": 10.9,
+          "steps_over_10ms": 7
+        },
+        {
+          "steps": 565,
+          "rms_error_mm": 0.28,
+          "max_error_mm": 2.12,
+          "max_velocity_ratio": 0.983,
+          "latency_ms_median": 2.82,
+          "latency_ms_p99": 15.0,
+          "steps_over_10ms": 13
+        },
+        {
+          "steps": 596,
+          "rms_error_mm": 0.44,
+          "max_error_mm": 2.95,
+          "max_velocity_ratio": 0.977,
+          "latency_ms_median": 2.81,
+          "latency_ms_p99": 17.5,
+          "steps_over_10ms": 18
+        },
+        {
+          "steps": 335,
+          "rms_error_mm": 0.16,
+          "max_error_mm": 1.18,
+          "max_velocity_ratio": 0.961,
+          "latency_ms_median": 2.85,
+          "latency_ms_p99": 16.4,
+          "steps_over_10ms": 9
+        },
+        {
+          "steps": 597,
+          "rms_error_mm": 0.28,
+          "max_error_mm": 2.42,
+          "max_velocity_ratio": 0.973,
+          "latency_ms_median": 2.84,
+          "latency_ms_p99": 13.5,
+          "steps_over_10ms": 10
+        },
+        {
+          "steps": 336,
+          "rms_error_mm": 0.18,
+          "max_error_mm": 1.27,
+          "max_velocity_ratio": 0.978,
+          "latency_ms_median": 3.32,
+          "latency_ms_p99": 7.5,
+          "steps_over_10ms": 0
+        },
+        {
+          "steps": 597,
+          "rms_error_mm": 0.25,
+          "max_error_mm": 3.39,
+          "max_velocity_ratio": 0.942,
+          "latency_ms_median": 2.88,
+          "latency_ms_p99": 8.2,
+          "steps_over_10ms": 3
+        },
+        {
+          "steps": 595,
+          "rms_error_mm": 0.39,
+          "max_error_mm": 3.07,
+          "max_velocity_ratio": 0.972,
+          "latency_ms_median": 2.97,
+          "latency_ms_p99": 18.3,
+          "steps_over_10ms": 33
+        },
+        {
+          "steps": 338,
+          "rms_error_mm": 0.26,
+          "max_error_mm": 2.04,
+          "max_velocity_ratio": 1.01,
+          "latency_ms_median": 3.26,
+          "latency_ms_p99": 19.4,
+          "steps_over_10ms": 38
+        },
+        {
+          "steps": 569,
+          "rms_error_mm": 0.25,
+          "max_error_mm": 1.91,
+          "max_velocity_ratio": 0.937,
+          "latency_ms_median": 3.63,
+          "latency_ms_p99": 17.6,
+          "steps_over_10ms": 14
+        },
+        {
+          "steps": 586,
+          "rms_error_mm": 1.63,
+          "max_error_mm": 15.83,
+          "max_velocity_ratio": 2.069,
+          "latency_ms_median": 3.87,
+          "latency_ms_p99": 21.8,
+          "solve_ms_median": 3.49,
+          "solve_ms_p99": 14.3,
+          "note": "heavy CPU starvation: solve times p99 14 ms (2.4-2.6 ms median in the other runs)"
+        }
+      ]
+    },
+    {
+      "design": "plan + NMPC gain (current)",
+      "mode": "realtime",
+      "inner_loop": "riccati",
+      "friction_model": "none",
+      "runs": [
+        {
+          "steps": 600,
+          "rms_error_mm": 0.35,
+          "max_error_mm": 1.6,
+          "max_velocity_ratio": 0.995,
+          "latency_ms_median": 2.8,
+          "latency_ms_p99": 10.6,
+          "steps_over_10ms": 1
+        },
+        {
+          "steps": 598,
+          "rms_error_mm": 0.34,
+          "max_error_mm": 1.58,
+          "max_velocity_ratio": 0.97,
+          "latency_ms_median": 2.89,
+          "latency_ms_p99": 12.7,
+          "steps_over_10ms": 14
+        },
+        {
+          "steps": 591,
+          "rms_error_mm": 0.72,
+          "max_error_mm": 5.52,
+          "max_velocity_ratio": 0.965,
+          "latency_ms_median": 2.89,
+          "latency_ms_p99": 21.1,
+          "steps_over_10ms": 54
+        }
+      ]
+    },
+    {
+      "design": "plan + fixed impedance",
+      "mode": "realtime",
+      "inner_loop": "pd",
+      "friction_model": "ddma",
+      "runs": [
+        {
+          "steps": 591,
+          "rms_error_mm": 2.2,
+          "max_error_mm": 22.33,
+          "max_velocity_ratio": 1.582,
+          "latency_ms_median": 2.95,
+          "latency_ms_p99": 16.2,
+          "steps_over_10ms": 17
+        },
+        {
+          "steps": 593,
+          "rms_error_mm": 2.09,
+          "max_error_mm": 29.17,
+          "max_velocity_ratio": 1.594,
+          "latency_ms_median": 3.0,
+          "latency_ms_p99": 8.3,
+          "steps_over_10ms": 4
+        },
+        {
+          "steps": 593,
+          "rms_error_mm": 0.66,
+          "max_error_mm": 5.88,
+          "max_velocity_ratio": 1.623,
+          "latency_ms_median": 3.6,
+          "latency_ms_p99": 11.0,
+          "steps_over_10ms": 7
+        }
+      ]
+    },
+    {
+      "design": "plan + NMPC gain (current)",
+      "mode": "lockstep",
+      "inner_loop": "riccati",
+      "friction_model": "ddma",
+      "runs": [
+        {
+          "steps": 1646,
+          "rms_error_mm": 0.09,
+          "max_error_mm": 0.23,
+          "max_velocity_ratio": 0.997,
+          "latency_ms_median": 2.67,
+          "latency_ms_p99": 8.2,
+          "steps_over_10ms": 9
+        }
+      ]
+    },
+    {
+      "design": "one interval + NMPC gain",
+      "mode": "realtime",
+      "inner_loop": "riccati",
+      "friction_model": "ddma",
+      "runs": [
+        {
+          "steps": 595,
+          "rms_error_mm": 0.7,
+          "max_error_mm": 7.71,
+          "max_velocity_ratio": 1.03,
+          "latency_ms_median": 2.84,
+          "latency_ms_p99": 17.4
+        },
+        {
+          "steps": 334,
+          "rms_error_mm": 0.98,
+          "max_error_mm": 12.2,
+          "max_velocity_ratio": 2.197,
+          "latency_ms_median": 2.82,
+          "latency_ms_p99": 12.4
+        },
+        {
+          "steps": 597,
+          "rms_error_mm": 0.59,
+          "max_error_mm": 5.29,
+          "max_velocity_ratio": 1.271,
+          "latency_ms_median": 2.69,
+          "latency_ms_p99": 13.1
+        },
+        {
+          "steps": 591,
+          "rms_error_mm": 0.2,
+          "max_error_mm": 2.1,
+          "max_velocity_ratio": 1.004,
+          "latency_ms_median": 2.74,
+          "latency_ms_p99": 10.1
+        }
+      ]
+    },
+    {
+      "design": "one interval + NMPC gain",
+      "mode": "realtime",
+      "inner_loop": "riccati",
+      "friction_model": "none",
+      "runs": [
+        {
+          "steps": 590,
+          "rms_error_mm": 0.3,
+          "max_error_mm": 2.52,
+          "max_velocity_ratio": 0.99,
+          "latency_ms_median": 2.65,
+          "latency_ms_p99": 6.6
+        },
+        {
+          "steps": 567,
+          "rms_error_mm": 0.31,
+          "max_error_mm": 3.77,
+          "max_velocity_ratio": 1.001,
+          "latency_ms_median": 2.72,
+          "latency_ms_p99": 9.1
+        },
+        {
+          "steps": 591,
+          "rms_error_mm": 0.28,
+          "max_error_mm": 1.67,
+          "max_velocity_ratio": 0.999,
+          "latency_ms_median": 2.66,
+          "latency_ms_p99": 8.9
+        }
+      ]
+    },
+    {
+      "design": "one interval + fixed impedance (0.1.0)",
+      "mode": "realtime",
+      "inner_loop": "pd",
+      "friction_model": "ddma",
+      "runs": [
+        {
+          "steps": 341,
+          "rms_error_mm": 0.6,
+          "max_error_mm": 6.97,
+          "max_velocity_ratio": 2.061,
+          "latency_ms_median": 2.67,
+          "latency_ms_p99": 6.7
+        },
+        {
+          "steps": 588,
+          "rms_error_mm": 1.6,
+          "max_error_mm": 13.54,
+          "max_velocity_ratio": 2.119,
+          "latency_ms_median": 2.76,
+          "latency_ms_p99": 16.0
+        },
+        {
+          "steps": 594,
+          "rms_error_mm": 1.18,
+          "max_error_mm": 12.17,
+          "max_velocity_ratio": 1.9,
+          "latency_ms_median": 2.72,
+          "latency_ms_p99": 14.2
+        },
+        {
+          "steps": 598,
+          "rms_error_mm": 0.62,
+          "max_error_mm": 7.79,
+          "max_velocity_ratio": 2.037,
+          "latency_ms_median": 2.81,
+          "latency_ms_p99": 13.4
+        }
+      ]
+    },
+    {
+      "design": "one interval + fixed impedance (0.1.0)",
+      "mode": "realtime",
+      "inner_loop": "pd",
+      "friction_model": "none",
+      "runs": [
+        {
+          "steps": 591,
+          "rms_error_mm": 0.25,
+          "max_error_mm": 2.06,
+          "max_velocity_ratio": 3.621,
+          "latency_ms_median": 2.73,
+          "latency_ms_p99": 12.2
+        },
+        {
+          "steps": 593,
+          "rms_error_mm": 7.84,
+          "max_error_mm": 64.86,
+          "max_velocity_ratio": 2.707,
+          "latency_ms_median": 2.72,
+          "latency_ms_p99": 18.9
+        },
+        {
+          "steps": 332,
+          "rms_error_mm": 0.46,
+          "max_error_mm": 3.02,
+          "max_velocity_ratio": 1.984,
+          "latency_ms_median": 2.7,
+          "latency_ms_p99": 9.9
+        }
+      ]
+    }
+  ]
+}
